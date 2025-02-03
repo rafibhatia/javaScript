@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #scrambled-word {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Scramble Game</h1>
+    <p id="scrambled-word"></p>
+    <input type="text" id="guess" placeholder="Your guess">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        const words = ["banana", "computer", "javascript", "elephant", "guitar"];
+        let originalWord = words[Math.floor(Math.random() * words.length)];
+        let scrambledWord = originalWord.split('').sort(() => Math.random() - 0.5).join('');
+        
+        document.getElementById("scrambled-word").textContent = scrambledWord;
+        
+        function checkGuess() {
+            const guess = document.getElementById("guess").value.toLowerCase();
+            if (guess === originalWord) {
+                document.getElementById("message").textContent = "🎉 Correct! Well done!";
+            } else {
+                document.getElementById("message").textContent = "❌ Try again!";
+            }
+        }
+    </script>
+</body>
+</html>

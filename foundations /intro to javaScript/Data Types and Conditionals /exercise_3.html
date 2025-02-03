@@ -1,0 +1,12 @@
+<p>Enter a sentence:</p>
+<input id="sentenceInput" type="text" placeholder="JavaScript is fun" />
+<button onclick="countWords()">Count Words</button>
+<p>Word Count: <span id="wordCountOutput"></span></p>
+
+<script>
+function countWords() {
+    let sentence = document.getElementById("sentenceInput").value;
+    let wordCount = sentence.split(" ").length;
+    document.getElementById("wordCountOutput").textContent = wordCount;
+}
+</script>

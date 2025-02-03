@@ -1,0 +1,12 @@
+<p>Enter an email with spaces and uppercase letters:</p>
+<input id="emailInput" type="text" placeholder="  ExAmPle@Email.COM  " />
+<button onclick="fixEmail()">Fix Email</button>
+<p>Fixed Email: <span id="fixedEmailOutput"></span></p>
+
+<script>
+function fixEmail() {
+    let userEmail = document.getElementById("emailInput").value;
+    let fixedEmail = userEmail.trim().toLowerCase();
+    document.getElementById("fixedEmailOutput").textContent = fixedEmail;
+}
+</script>
