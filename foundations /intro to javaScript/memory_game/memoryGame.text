@@ -1,0 +1,27 @@
+method and bult in functino we wil be useing 
+so all the dom method will include 
+querSelectorAll
+.setAttrubute
+.removeEventListener
+..getAttribute
+.addEventListerner
+.querySelector
+.textContent
+.appendChild
+.createElement 
+
+next we will be useing bult in methos for arrays  such as 
+.push
+.length
+
+and for the bult in fluctino will include 
+setTimeout
+consloe.log()
+alert
+Math.radom()
+Math.floor
+
+so for now we will need to cread 3 function
+1 makeBorad() : to make the board 
+2 flipCard() :to flip the cards and store info that we need in order for the third function 
+3 checkmatch() : with the info that stored in the 2 arrayes we will use to cheack if it the same and check

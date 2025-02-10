@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    width: 75vh;
+    height: 75vh;
+    flex-wrap: wrap;
+}
+.grid{
+    border: solid black ;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    
+}

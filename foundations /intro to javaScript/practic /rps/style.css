@@ -1,0 +1,20 @@
+.container{
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   flex-direction: column;
+}
+
+.center{
+    border: solid #000000 3px;
+    height: fit-content;
+    width: fit-content
+
+}
+.result{
+    width: min-content;
+    height: min-content;
+    text-align: center;
+}
+
+
